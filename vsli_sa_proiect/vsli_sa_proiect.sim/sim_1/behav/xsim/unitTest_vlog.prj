@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../vsli_sa_proiect.srcs/sources_1/new/tempProces.v" \
+"../../../../vsli_sa_proiect.srcs/sources_1/new/uart_recv.v" \
+"../../../../vsli_sa_proiect.srcs/sources_1/new/uart_send.v" \
+"../../../../vsli_sa_proiect.srcs/sim_1/new/unitTest.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

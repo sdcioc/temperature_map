@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+20:57:24
+/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sim_1/new/unitTest.v,1541260031,verilog,,,,unitTest,,,,,,,,
+/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sources_1/new/tempProces.v,1541345136,verilog,,/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sources_1/new/uart_recv.v,,tempProces,,,,,,,,
+/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sources_1/new/uart_recv.v,1541263904,verilog,,/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sources_1/new/uart_send.v,,uart_recv,,,,,,,,
+/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sources_1/new/uart_send.v,1541260438,verilog,,/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sim_1/new/unitTest.v,,uart_send,,,,,,,,

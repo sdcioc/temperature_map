@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="unitTest_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="unitTest" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="609076333334fs"></ZoomStartTime>
+      <ZoomEndTime time="610118333335fs"></ZoomEndTime>
+      <Cursor1Time time="609404333000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="134"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="46" />
+   <wvobject type="logic" fp_name="/unitTest/uut/i_w_clk">
+      <obj_property name="ElementShortName">i_w_clk</obj_property>
+      <obj_property name="ObjectShortName">i_w_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/unitTest/uut/i_w_reset">
+      <obj_property name="ElementShortName">i_w_reset</obj_property>
+      <obj_property name="ObjectShortName">i_w_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/unitTest/uut/i_w_Rx_Serial">
+      <obj_property name="ElementShortName">i_w_Rx_Serial</obj_property>
+      <obj_property name="ObjectShortName">i_w_Rx_Serial</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/unitTest/uut/o_w_Tx_Serial">
+      <obj_property name="ElementShortName">o_w_Tx_Serial</obj_property>
+      <obj_property name="ObjectShortName">o_w_Tx_Serial</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_FSM_State">
+      <obj_property name="ElementShortName">r_FSM_State[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_FSM_State[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/unitTest/uut/r_recived_sensors_number">
+      <obj_property name="ElementShortName">r_recived_sensors_number</obj_property>
+      <obj_property name="ObjectShortName">r_recived_sensors_number</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_sensors_number">
+      <obj_property name="ElementShortName">r_sensors_number[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_sensors_number[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/ra_sensors_x_position">
+      <obj_property name="ElementShortName">ra_sensors_x_position[0:9][7:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_sensors_x_position[0:9][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/ra_sensors_y_position">
+      <obj_property name="ElementShortName">ra_sensors_y_position[0:9][7:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_sensors_y_position[0:9][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/ra_sensors_temp">
+      <obj_property name="ElementShortName">ra_sensors_temp[0:9][7:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_sensors_temp[0:9][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap">
+      <obj_property name="ElementShortName">raa_tempMap[0:19][0:19][7:0]</obj_property>
+      <obj_property name="ObjectShortName">raa_tempMap[0:19][0:19][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[0]">
+         <obj_property name="ElementShortName">[0][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[1]">
+         <obj_property name="ElementShortName">[1][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[2]">
+         <obj_property name="ElementShortName">[2][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[3]">
+         <obj_property name="ElementShortName">[3][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[4]">
+         <obj_property name="ElementShortName">[4][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[5]">
+         <obj_property name="ElementShortName">[5][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[6]">
+         <obj_property name="ElementShortName">[6][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[7]">
+         <obj_property name="ElementShortName">[7][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[8]">
+         <obj_property name="ElementShortName">[8][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[9]">
+         <obj_property name="ElementShortName">[9][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[10]">
+         <obj_property name="ElementShortName">[10][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[11]">
+         <obj_property name="ElementShortName">[11][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[12]">
+         <obj_property name="ElementShortName">[12][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[13]">
+         <obj_property name="ElementShortName">[13][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[14]">
+         <obj_property name="ElementShortName">[14][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[15]">
+         <obj_property name="ElementShortName">[15][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[16]">
+         <obj_property name="ElementShortName">[16][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[17]">
+         <obj_property name="ElementShortName">[17][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[18]">
+         <obj_property name="ElementShortName">[18][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19]">
+         <obj_property name="ElementShortName">[19][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][0:19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][0]">
+            <obj_property name="ElementShortName">[0][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][1]">
+            <obj_property name="ElementShortName">[1][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][2]">
+            <obj_property name="ElementShortName">[2][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][3]">
+            <obj_property name="ElementShortName">[3][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][4]">
+            <obj_property name="ElementShortName">[4][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][5]">
+            <obj_property name="ElementShortName">[5][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][6]">
+            <obj_property name="ElementShortName">[6][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][7]">
+            <obj_property name="ElementShortName">[7][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][8]">
+            <obj_property name="ElementShortName">[8][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][9]">
+            <obj_property name="ElementShortName">[9][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[9][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][10]">
+            <obj_property name="ElementShortName">[10][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[10][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][11]">
+            <obj_property name="ElementShortName">[11][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[11][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][12]">
+            <obj_property name="ElementShortName">[12][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[12][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][13]">
+            <obj_property name="ElementShortName">[13][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[13][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][14]">
+            <obj_property name="ElementShortName">[14][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[14][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][15]">
+            <obj_property name="ElementShortName">[15][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[15][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][16]">
+            <obj_property name="ElementShortName">[16][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[16][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][17]">
+            <obj_property name="ElementShortName">[17][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[17][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][18]">
+            <obj_property name="ElementShortName">[18][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[18][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19][19]">
+            <obj_property name="ElementShortName">[19][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[19][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[0]">
+         <obj_property name="ElementShortName">[0][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[1]">
+         <obj_property name="ElementShortName">[1][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[2]">
+         <obj_property name="ElementShortName">[2][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[3]">
+         <obj_property name="ElementShortName">[3][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[4]">
+         <obj_property name="ElementShortName">[4][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[5]">
+         <obj_property name="ElementShortName">[5][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[6]">
+         <obj_property name="ElementShortName">[6][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[7]">
+         <obj_property name="ElementShortName">[7][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[8]">
+         <obj_property name="ElementShortName">[8][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[9]">
+         <obj_property name="ElementShortName">[9][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[10]">
+         <obj_property name="ElementShortName">[10][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[11]">
+         <obj_property name="ElementShortName">[11][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[12]">
+         <obj_property name="ElementShortName">[12][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[13]">
+         <obj_property name="ElementShortName">[13][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[14]">
+         <obj_property name="ElementShortName">[14][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[15]">
+         <obj_property name="ElementShortName">[15][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[16]">
+         <obj_property name="ElementShortName">[16][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[17]">
+         <obj_property name="ElementShortName">[17][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[18]">
+         <obj_property name="ElementShortName">[18][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][0:19][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/raa_tempMap[19]">
+         <obj_property name="ElementShortName">[19][0:19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][0:19][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/ra_total_product">
+      <obj_property name="ElementShortName">ra_total_product[0:4][165:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_total_product[0:4][165:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject type="array" fp_name="/unitTest/uut/ra_total_product[0]">
+         <obj_property name="ElementShortName">[0][165:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][165:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/ra_total_product[1]">
+         <obj_property name="ElementShortName">[1][165:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][165:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/ra_total_product[2]">
+         <obj_property name="ElementShortName">[2][165:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][165:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/ra_total_product[3]">
+         <obj_property name="ElementShortName">[3][165:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][165:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/unitTest/uut/ra_total_product[4]">
+         <obj_property name="ElementShortName">[4][165:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][165:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/ra_total_params">
+      <obj_property name="ElementShortName">ra_total_params[0:4][165:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_total_params[0:4][165:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/ra_tmp_temp">
+      <obj_property name="ElementShortName">ra_tmp_temp[0:4][165:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_tmp_temp[0:4][165:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_pz_i_index">
+      <obj_property name="ElementShortName">r_pz_i_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pz_i_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_pz_j_index">
+      <obj_property name="ElementShortName">r_pz_j_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pz_j_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_s_i_index">
+      <obj_property name="ElementShortName">r_s_i_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_s_i_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_s_j_index">
+      <obj_property name="ElementShortName">r_s_j_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_s_j_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_s_k_index">
+      <obj_property name="ElementShortName">r_s_k_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_s_k_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_s_t_index">
+      <obj_property name="ElementShortName">r_s_t_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_s_t_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_tm_i_index">
+      <obj_property name="ElementShortName">r_tm_i_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_tm_i_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_tm_j_index">
+      <obj_property name="ElementShortName">r_tm_j_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_tm_j_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_tm_k_index">
+      <obj_property name="ElementShortName">r_tm_k_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_tm_k_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/r_tm_t_index">
+      <obj_property name="ElementShortName">r_tm_t_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_tm_t_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/waa_distances">
+      <obj_property name="ElementShortName">waa_distances[0:4][0:9][15:0]</obj_property>
+      <obj_property name="ObjectShortName">waa_distances[0:4][0:9][15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/waa_params">
+      <obj_property name="ElementShortName">waa_params[0:4][0:9][165:0]</obj_property>
+      <obj_property name="ObjectShortName">waa_params[0:4][0:9][165:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/unitTest/uut/w_uart_read_enable">
+      <obj_property name="ElementShortName">w_uart_read_enable</obj_property>
+      <obj_property name="ObjectShortName">w_uart_read_enable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/unitTest/uut/w_uart_read_Rx_DV">
+      <obj_property name="ElementShortName">w_uart_read_Rx_DV</obj_property>
+      <obj_property name="ObjectShortName">w_uart_read_Rx_DV</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/w_uart_read_Rx_Byte">
+      <obj_property name="ElementShortName">w_uart_read_Rx_Byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_uart_read_Rx_Byte[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/unitTest/uut/w_uart_send_Tx_Dv">
+      <obj_property name="ElementShortName">w_uart_send_Tx_Dv</obj_property>
+      <obj_property name="ObjectShortName">w_uart_send_Tx_Dv</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/w_uart_send_Tx_Byte">
+      <obj_property name="ElementShortName">w_uart_send_Tx_Byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_uart_send_Tx_Byte[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/unitTest/uut/w_uart_send_Tx_Active">
+      <obj_property name="ElementShortName">w_uart_send_Tx_Active</obj_property>
+      <obj_property name="ObjectShortName">w_uart_send_Tx_Active</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/unitTest/uut/w_uart_send_Tx_Done">
+      <obj_property name="ElementShortName">w_uart_send_Tx_Done</obj_property>
+      <obj_property name="ObjectShortName">w_uart_send_Tx_Done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/MAX_SENSOR_NUMBERS">
+      <obj_property name="ElementShortName">MAX_SENSOR_NUMBERS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_SENSOR_NUMBERS[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/MAX_WIDTH">
+      <obj_property name="ElementShortName">MAX_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/MAX_HEIGHT">
+      <obj_property name="ElementShortName">MAX_HEIGHT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_HEIGHT[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/PARALEL_ZONES">
+      <obj_property name="ElementShortName">PARALEL_ZONES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PARALEL_ZONES[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/DATA_WIDTH">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/WDATA_WIDTH">
+      <obj_property name="ElementShortName">WDATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WDATA_WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/BAUD_RATE">
+      <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/CLK_RATE">
+      <obj_property name="ElementShortName">CLK_RATE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_RATE[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/s_IDLE">
+      <obj_property name="ElementShortName">s_IDLE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_IDLE[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/s_UART_READ">
+      <obj_property name="ElementShortName">s_UART_READ[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_UART_READ[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/s_TEMP_PROCESSING">
+      <obj_property name="ElementShortName">s_TEMP_PROCESSING[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_TEMP_PROCESSING[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/s_UART_WRITE">
+      <obj_property name="ElementShortName">s_UART_WRITE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_UART_WRITE[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/unitTest/uut/s_ERROR">
+      <obj_property name="ElementShortName">s_ERROR[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_ERROR[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

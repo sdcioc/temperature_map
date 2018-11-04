@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sources_1/new/tempProces.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tempProces
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sources_1/new/uart_recv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_recv
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sources_1/new/uart_recv.v:54]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sources_1/new/uart_send.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_send
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ciocirlan/vsli_sa_proiect/vsli_sa_proiect.srcs/sim_1/new/unitTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module unitTest
