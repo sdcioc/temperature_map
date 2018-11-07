@@ -1,0 +1,116 @@
+==Slide 1==
+Bună ziuam mă numesc Ciocîrlan Ștefan-Dan și vă voi prezenta
+proiectul meu despre generarea unei hărți de temperatură într-un
+mediu cu ajutorul unui FPGA. Acest poriect este un proiect de tip
+sensorr fusion.
+
+==Slide 2==
+În prezentare voi avea următorul cuprins:
+1. Obiective proiect și resurse disponbibile
+2. Cum am acumulat datele
+3. Cum am procesat datele acumulat
+4. Cum am implementat in Verilog
+5. Analiza performanței implementării mele în verilog față
+de aceeași implementare în Python
+6. Concluziile proiectului
+7. Întrebări dacă aveți
+
+==Slide 3==
+Obiectivele proiectului sunt:
+1. să acumulăm date de la mai mulți senzori și să combinăm aceste
+date procesându-le împreună.
+2. Să generăm o hartă a unei încăperi și să poziționăm senzorii
+pe această hartă.
+3. să creăm o harta de temperatură pe care să o suprapunem peste
+harta precedentă.
+4. să analizăm performanței implementării și dacă este utilă.
+
+==Slide 4==
+Resursele folosite pentru proiect sunt.
+1. Un controller Z-wave 
+2. 4 senzori fixi de temperatură Z-wave
+3. Un robot umanoid Tiago ce deține propriul senzor de temperatură
+4. Un FPGA Artix-7
+
+==Slide 5==
+Cum acumulat datele ?
+M-am folosit de protocolul Z-wave pentru a transmite
+datele de la sensorii fixi către controlerul legat
+la robot pe care rula soluția openhab2 care transmitea
+datele mai departe către ros unde erau și datele de la senzorul
+robotului. Aceste date le-am reaținut într-o bază de date mongodb
+pe care le-am exportat mai târziu în fișiere json pentru procesare
+ulterioară.
+Pentru generarea hărții m-am folosit de senzorii laser de pe robot
+și de utilitarul gmappping pentru maparea încăperii.
+Încăperea o reprezintă holul mare al universității ENSTA Paris.
+
+==Slide 6==
+Prima procesare a datelor estea cea asupra laserului pentru
+maparea încăperii.
+În stânga se poate vedea harta mapată de robot, iar în dreapta este
+harta pe care apar cu pătrate verzi poziții senzori și cu pătrate
+albastre pozițiile între care s-a deplasat robotul și a măsaurat
+temperatură. Pentru retușarea hărțiilor am folosit GIMP un utilitar
+din linux.
+
+==Slide 7==
+Pentru procesarea hărții de temperatură am folosit interpolarea
+prin parametrizare distanței dată de formula următoare cu valoarea
+2 pentru p. Am ales 2 pentru ca acest lucru aducea mai puține circuite
+în cazul implementării hardware. Am folosit această interpolare deoarece
+poate funcționa ca și extrapolare este metoda recomandată în astfel de cazuri.
+
+==Slide 8==
+Harta de temepratură se obținea sub o formă de matrice pe care cu
+ajutorul modulelor pillow și numpy din pyhton am reușit să o suprapunem
+peste harta inițială generând imaginea din acest slide.
+
+==Slide 9==
+Pentru implementarea în verilog am avut două mari obiective.
+Primul era comunicarea cu robotul Tiago pe care am făcut pe
+serială implementând în verilog un driver de uart cu un bit
+de start cu un bit de stop și fără bit de paritate. Modul de
+funcționare este următorul :
+Transmisiunea stă deschisă cu voltaj cât timp nu se transmite nimic
+în momentul în care apare o transmisiune de date se trimite un
+bit de stop care reprezintă lipsa voltajului pentru o durată de un bit
+după care se transmit biți de date cu voltajul corespunzător. După ce sunt
+transmiși 8 biți se transmite un bit de stop.
+
+==Slide 10==
+Al doilea este FSM-ul modulului:
+Prima stare de IDLE este o stare intermediar către starea
+de UART_READ în care se recpționează pe serială numărul de
+senzori și datele despre senzori. După recepționarea tuturor
+acesto date se trece în starea de procesare unde se calculează
+harta de temperatură. Ultima etapă este cea în care se transmite
+datele de temperatură pe serială.
+
+==Slide 11==
+Pentru analiza performanțelor am folosit următorul tabel.
+Am comparat aceeași implementare în verilog pe fpga și în python, pe 
+trei durate: transmiterea datelor sorilor, procesarea datelor,
+transmisia rezultatului. Sunt reprezentați timpi totali
+după 111 iterații și timpi medii. Se poate observa că procesarea
+este mult mai rapidă pe FPGA, dar transmisiunea este mai lungă. Acest
+lucru se datorează faptului că în python doar se pune pe buffer valori
+respective și sunt preluate de bridge acest lucru înseamnă că nu se
+face efectiv transmisia serială. Pe fpga este paralelizare doar 5,
+dar se paote mări și mai mult. Discuția este cât de mult vrem să eliberăm
+procesorul robotului.
+
+==Slide 12==
+Concuziile proiectului făcut de mine este următorul:
+1. Procesarea harții pe FPGA este de 1000 de ori mai rapidă
+(alt ordin de maărime)
+2. Transmiterea datelor are cea mai mare durataă din întreg procesul
+3. Acest procedeu poate fi folosit și cu alte tipuri de senzori (presiune, umiditate)
+4. Un framework pentr introducerea procesării pe FPGA în cadrul sistemului ROS
+5. Un mod de verificare a metodelor de interpolare prin intermediul deplasării 
+robotului Tiago prin mediu.
+
+Muncă ulterioară:
+1. Voi încerca folosirea altor metode de interpolare.
+2. Voi încerca și cu alții senzori.
+3. voi încerca să folosesc aceste date pentru localizare robotului.
